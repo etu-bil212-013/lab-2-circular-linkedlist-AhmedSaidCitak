@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "dort sekiz",
+      "setup": "javac *.java",
+      "run": "java -cp . Main",
+      "input": "7 8 9 4 5 6 1 2 3 | 4 8",
+      "output": "8 4 5 6 1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "uc uc",
+      "setup": "javac *.java",
+      "run": "java -cp . Main",
+      "input": "1 2 3 4 5 6 7 8 9 | 3 3",
+      "output": "1 2 6 7 8 9",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "empty",
+      "setup": "javac *.java",
+      "run": "java -cp . Main",
+      "input": "7 8 9 | 3 3",
+      "output": "Linkedlist is now empty.",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "too small",
+      "setup": "javac *.java",
+      "run": "java -cp . Main",
+      "input": "7 8 9 4 5 6 | 8 8",
+      "output": "Error: linkedlist is too small.",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
